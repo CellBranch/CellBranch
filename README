@@ -1,0 +1,14 @@
+The top level directory contains:
+
+cosmos2015-proceedings.pdf:
+the Proceedings for the 2015 CoSMoS workshop, held in York, UK. The proceedings include a paper about the CellBranch simulation by Greaves et al. which details the kind of results that can be obtained using the simulation.
+
+v1.0b_simulation/
+the source code for the CellBranch simulation, as well as an executable jar in the directory above the source.
+
+Python_data_generation/
+
+cluster_scripts/
+
+R_data_analysis/
+

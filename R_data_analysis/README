@@ -1,0 +1,16 @@
+The directory contains he following R scripts used for analysis of simulation outputs...
+
+do_boxplot_grid.r
+do_run_grid.r
+do_three_cistromes_run1_grid.r
+do_timeseries_2.r
+do_timeseries.r
+compile_results.sh
+
+do_timeseries.r and do_timeseries_2.r collate the numbers of activated sites at each timestep across 200 simulation runs. do_timeseries.r overlays all 200 timeseries from one experiment. do_timeseries_2.r produces 200 separate plots per experiment.
+
+do_run_grid.r produces a grid of timeseries plots - in this instance the first of the 200 runs in each experiment. 
+
+do_three_cistromes_run1_grid.r produces a grid of timeseries plots - in this instance the first of the 200 runs in each experiment run on a 3 cistrome system. 
+
+do_boxplot_grid.r produces a grid of boxplots. In this instance the boxplots are of the levels of activation of two TFs in the final step of each of 200 simulation runs. These final steps are collated using compile_results.sh.

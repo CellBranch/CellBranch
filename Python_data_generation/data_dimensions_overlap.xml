@@ -1,0 +1,31 @@
+<xml>
+	<cistromeName>
+		<name>sox2</name>
+	</cistromeName>
+	<cistromeName>
+		<name>oct4</name>
+	</cistromeName>
+	<dimensions>
+		<x>10</x>
+		<y>10</y>
+		<nseg>100</nseg>
+	</dimensions>
+	<shared_populations>
+		<nred_shared>3</nred_shared>
+		<nwhite_shared>18</nwhite_shared>
+	</shared_populations>
+	<unshared_populations>
+		<nred_unshared>2</nred_unshared>
+		<nwhite_unshared>15</nwhite_unshared>
+	</unshared_populations>
+	<unshared_populations>
+		<nred_unshared>3</nred_unshared>
+		<nwhite_unshared>15</nwhite_unshared>
+	</unshared_populations>
+	<results>
+		<writeResultsTo>/shared/cssamba0/staffstore/rg531/sda5/java_workspace/CellBranch/CellBranch_v1.0a</writeResultsTo>
+	</results>
+	<tfbs_per_segment>
+		<maxTFBS>10</maxTFBS>
+	</tfbs_per_segment>
+</xml>

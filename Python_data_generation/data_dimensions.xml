@@ -1,0 +1,23 @@
+<xml>
+	<cistromeName>
+		<name>sox2</name>
+	</cistromeName>
+	<dimensions>
+		<x>234</x>
+		<y>234</y>
+	</dimensions>
+	<populations>
+		<nred>542</nred>
+		<npost>3330</npost>
+		<nseg>54495</nseg>
+	</populations>
+	<results>
+		<writeResultsTo>/shared/cssamba0/staffstore/rg531/sda5/java_workspace/CellBranch/CellBranch_v0.0b</writeResultsTo>
+	</results>
+	<tfbs_per_segment>
+		<maxTFBS>10</maxTFBS>
+	</tfbs_per_segment>
+	<iteration>
+		<numRuns>1</numRuns>
+	</iteration>
+</xml>

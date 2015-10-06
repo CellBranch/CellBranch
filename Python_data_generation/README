@@ -1,0 +1,42 @@
+This directory contains the following files:
+
+segments.50kb.txt
+gen_cistromes_from_ChIP-Seq.py
+real_nanog_cistrome.xml
+real_oct4_cistrome.xml
+real_sox2_cistrome.xml
+real_cmyc_cistrome.xml
+
+data_dimensions.xml
+gen_data.py
+
+gen_overlapping_cistromes.py
+
+-------------------------------------------------------------------------------
+
+segments.50kb.txt:
+segments_new.50kb.txt:
+experimental ChIP-Seq data for the cistromes we are modelling (Nanog, Oct4 and Sox2 and with c-Myc in segments_new.50kb.txt). The file is a space separated value file which is read in and processed one line at a time by gen_cistromes_from_ChIP-Seq.py.
+
+gen_cistromes_from_ChIP-Seq.py: 
+this script accepts segments.50kb.txt as input and outputs the requested cistrome in XML format. The Python script prompts the user with an instruction on how to use the script. The command line arguments are the name of  the file containing the ChIP-Seq data, the column containing the number of TFBS for the desired TF, the column giving details of the gene products, the name of the output file to put the cistrome data (in XML format) into.
+
+real_nanog_cistrome.xml
+real_oct4_cistrome.xml
+real_sox2_cistrome.xml:
+real_cmyc_cistrome.xml:
+the XML formatted cistrome data produced from segments.50kb.txt by gen_cistromes_from_ChIP-Seq.py. Each is a 234 by 234 grid of Segments each described by an XML node in the cistrome file.
+
+data_dimensions.xml:
+An XML formatted file containing named parameters for input to gen_data.py. The parameters describe such things as grid size, the number of segments in the cistrome, the number of segments which are 'red' and 'white' etc
+
+gen_data.py:
+generates a synthetic cistrome that satisfies the parameters specified in data_dimensions.xml. The Python script prompts the user with an instruction on how to use the script.
+
+data_dimensions_overlap.xml:
+An XML formatted file containing named parameters for input to gen_overlapping_cistromes.py. The parameters describe such things as grid size, the number of segments in the cistrome, the number of segments which are 'red'(shared and unshared) and 'white' (shared and unshared) etc
+
+gen_overlapping_cistromes.py:
+reads in the parameters in data_dimensions_overlap.xml and generates the multiple cistromes that satisfy these parameters. The Python script prompts the user with an instruction on how to use the script.
+
+

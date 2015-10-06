@@ -1,0 +1,3 @@
+This directory contains the source code for the CellBranch multi-cistrome simulation.
+
+CBSimv1.0b.jar is he executable jar for the simulation and is needed to execute the simulation from the command line or from a cluster batch script.

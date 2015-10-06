@@ -1,0 +1,22 @@
+<xml>
+	<simulation_setup>
+		<simulationSteps>4000</simulationSteps>
+		<timeOut>1</timeOut>
+		<resultFilePath>/scratch/rg531</resultFilePath>
+		<description>rev_exp5/n8_o0</description>
+	</simulation_setup>
+	<cistromes>
+		<cistrome>
+			<source>real_nanog_cistrome.xml</source>
+			<name>nanog</name>
+			<branchingRate>8</branchingRate>
+    			<initialReds>631</initialReds>
+		</cistrome>
+		<cistrome>
+			<source>real_oct4_cistrome.xml</source>
+			<name>oct4</name>
+			<branchingRate>0</branchingRate>
+    			<initialReds>0</initialReds>
+		</cistrome>
+	</cistromes>
+</xml>
