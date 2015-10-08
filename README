@@ -7,8 +7,11 @@ v1.0b_simulation/
 the source code for the CellBranch simulation, as well as an executable jar in the directory above the source.
 
 Python_data_generation/
+Python scripts to generate artificial cistrome data and experimental cistrome data (from ChIP-Seq data)
 
 cluster_scripts/
+to run batch jobs on the local SGE enabled cluster
 
 R_data_analysis/
+to process the resulting the batches of simulation outputs and produce output graphs
 

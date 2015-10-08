@@ -7,14 +7,14 @@ do_exp1_batch.sh
 -------------------------------------------------------------------------------
 
 n8_o0_parameters.xml:
-is an example of the XML formatted input parameters used to describe the system to be simulated - principally the cistromes to include the simulation, their branching parameters and how activated they are at step 0
+is an example of the XML formatted input parameters used to describe the system to be simulated - principally the cistromes to include the simulation, their branching parameters and how activated they are at step 0. An important additional run parameter is the path to the directory where the simulation output should be written to.
 
 do_batch_of_200.sh:
 submit a batch of 200 jobs using the specified parameters to a Sun Grid Engine-enabled cluster. The simulation expects two command line parameters fromn the user...
 
 qsub ./do_batch_of_200.sh X Y 
 
-where X is the number of runs to perform and Y can be any unique number (I have chosen to use Y as the m value for the first cistrome specified in the parameters file. X, Y and the run number (SGE)_TASK_ID) are used to make up a directory path where the run results will be stored.
+where X is the number of runs to perform and Y can be any unique number (I have chosen to use Y as the m value for the first cistrome specified in the parameters file. X, Y and the run number ($SGE_TASK_ID) are used to make up a directory path where the run results will be stored.
 
 Run results are stored as space-separated values in a plain text file. The file has a set of 6 columns per cistrome in the model, the columns represent:
 the number of red posts unique to this cistrome that are activated
