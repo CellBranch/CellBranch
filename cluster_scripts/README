@@ -9,8 +9,10 @@ do_exp1_batch.sh
 n8_o0_parameters.xml:
 is an example of the XML formatted input parameters used to describe the system to be simulated - principally the cistromes to include the simulation, their branching parameters and how activated they are at step 0. An important additional run parameter is the path to the directory where the simulation output should be written to.
 
+The <resultFilePath> tag contains a location at which the results directory will be created. On the YARCC at the University of York, this will be the users area on the scratch disk /scratch. You need to replace this with the path of a directory you can write to from your compute cluster...
+
 do_batch_of_200.sh:
-submit a batch of 200 jobs using the specified parameters to a Sun Grid Engine-enabled cluster. The simulation expects two command line parameters fromn the user...
+submit a batch of 200 jobs using the specified parameters to a Sun Grid Engine-enabled cluster. The simulation expects two command line parameters from the user...
 
 qsub ./do_batch_of_200.sh X Y 
 
@@ -24,6 +26,7 @@ the cumulative number of white posts unique to this cistrome that are activated
 the number of red posts shared by this cistrome  and another that are activated
 the cumulative number of red posts shared by this cistrome  and another that are activated
 
+the script issues a shell command to run a java JAR and so the user must replace the $path_to_local_java/ variable with the path to the java that is installed on their local cluster (and which should be the version of java used to compile the JAR too).
 
 do_exp1_batch.sh:
 is a script that dumps all the batches of 200 runs needed to complete a given multi-batch experiment onto the cluster
