@@ -159,7 +159,16 @@ public class Segment implements Steppable
 	
 	public ArrayList<Integer> getSharedBy()
 	{
-		return sharedBy;
+		
+		ArrayList<Integer> sharedByCopy = new ArrayList<Integer>();
+		
+		for(int i = 0; i < sharedBy.size(); i++)
+		{
+			int thisIndex = (int) sharedBy.get(i);
+			sharedByCopy.add(thisIndex);
+		}
+		
+		return sharedByCopy;
 	}
 	
 	public void setSharedBy(int n)
